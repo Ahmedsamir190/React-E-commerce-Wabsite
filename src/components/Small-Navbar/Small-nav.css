@@ -1,0 +1,118 @@
+.bar {
+    background-color: #d6c9afc7;
+    font-weight: bold;
+}
+@media (max-width:767px) {
+    .bar {
+        padding: 20px 0px;
+    }  
+}
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+.categories::after {
+    content: "";
+    position: absolute;
+    border-width: 5px;
+    bottom: 18px;
+    left: 110px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+@media (max-width:767px) {
+    .categories::after {
+        bottom: 0px;
+    }  
+}
+.bar .categories-type {
+    background-color: white;
+    padding: 5px ;
+    line-height: 50px;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 50px);
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+}
+.All-categories:hover .categories-type {
+    opacity: 50;
+    z-index: 10;
+    top: calc(100% + 1px);
+}
+@media (max-width:991px) {
+    .All-categories:hover .categories-type {
+        top: calc(100% + 20px);
+    }
+}
+.categories-type img {
+    max-width: 70%;
+}
+@media (max-width:480px) {
+    .categories-type img  {
+        display: none;
+    }
+}
+.All-categories p {
+    margin-bottom: 0 !important;
+}
+.categories-type {
+    display: flex;
+    justify-content: space-between;
+}
+.categories-type ul li {
+    padding-left: 10px;
+}
+.categories-type ul li:hover  {
+    background-color: #80808040;
+}
+.categories-type ul {
+    flex: 1;
+    padding-left: 0 !important;
+}
+.categories-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.categories-list ul li a {
+    padding: 17px;
+    color: black;
+}
+@media (max-width:767px) {
+    .categories-list ul  {
+        display: none;
+    }
+}
+.categories-list ul li a:hover {
+    background-color: white;
+    border-top: 1px solid black;
+    color: #d31312;
+}
+.categories-list ol {
+    background-color: white;
+    line-height: 60px;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: calc(100% + 50px);
+    padding: 6px 46px;
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+}
+.categories:hover .categories-list ol {
+    z-index: 2;
+    opacity: 5;
+    top: calc(100% + 18px);
+}
+@media (min-width:768px) {
+    .listdown  {
+        display: none;
+    }
+}
