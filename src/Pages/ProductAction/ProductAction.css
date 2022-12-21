@@ -1,0 +1,223 @@
+.title-page {
+    background-image: url(../Photo/image34.PNG);
+    background-position: center;
+    height: 30vh;
+}
+
+.title-page h3 {
+    padding: 30px 0px;
+    margin-left: 40px;
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.title-page .button {
+    margin-left: 40px;
+    margin-top: 18px;
+    padding: 10px 25px;
+    background-color: #198754;
+    color: white;
+    font-weight: 800;
+    transition: 0.5s;
+}
+.title-page .button:hover {
+    box-shadow: 1px 1px 5px 2px #066806;
+}
+table {
+    text-align: center;
+}
+.action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media (max-width:767px) {
+    tbody tr :nth-child(4){
+        flex-direction: column;
+    }
+}
+thead td {
+    padding: 15px;
+}
+tbody td {
+    padding: 10px;
+}
+tbody .delete,
+tbody .btn-info  {
+    padding: 10px ;
+    color: white;
+    border: none;
+}
+@media (max-width:767px) {
+    tbody .delete {
+        margin: 10px 0px 10px 0px;
+    }
+}
+tbody .btn-info {
+    margin-left: 10px;
+    padding: 9px 25px;
+}
+@media (max-width:767px) {
+    tbody .btn-info {
+        margin: 0px;
+    }
+}
+.product-id h1 {
+    padding: 40px 0px;
+}
+.product-id {
+    background-color: #dcdcdc1a;
+}
+.product-id-info {
+    display: flex;
+    padding: 5px;
+    flex-direction: row;   
+    background-color: white;
+    border: 1px solid #80808059;
+    border-radius: 2%;
+}
+@media (max-width:991px) {
+    .product-id-info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.product-id-info img {
+    max-width: 40%;
+    height: 50ch;
+}
+@media (max-width:991px) {
+    .product-id-info img {
+        max-width: 70%;
+        height: 100%;
+    }
+}
+.words {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    margin-left: 20px;
+    padding: 50px 5px;
+    width: 25%;
+}
+@media (max-width:991px) {
+    .words  {
+        width: 75%;
+    }
+}
+
+.click {
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+.click:hover {
+    color: blue;
+}
+.words .price {
+    font-weight: bold;
+}
+.words :nth-child(4) {
+    line-height: 35px;
+}
+.card-pay {
+    border:1px solid #80808045;
+    margin-left: 19px;
+    padding: 58px 16px;
+    flex: 1;
+    text-align: center;
+    border-radius: 10%;
+}
+@media (max-width:991px) {
+    .card-pay  {
+        margin-left: 0px;
+    }
+}
+.card-pay :nth-child(2) {
+    line-height: 42px;
+    margin-top: 24px;
+    color: #257825;
+}
+.card-pay :nth-child(1) {
+    font-weight: bold;
+}
+.card-pay :nth-child(3),
+.card-pay :nth-child(4) {
+    width: 100%;
+    margin: 11px 0px 0px 0px;
+    padding: 12px;
+    border-radius: 13%;
+    border: none;
+    cursor: pointer;
+}
+.card-pay :nth-child(3) {
+    background-color: #ffd814;
+}
+.card-pay :nth-child(3):hover {
+    background-color: #bea009;
+}
+.card-pay :nth-child(4) {
+    background-color:#ffa41c ; 
+}
+.card-pay :nth-child(4):hover {
+    background-color: #be7c19;
+}
+.add-page {
+    background-image: url(../Photo/image30.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add-page-container {
+    width: 100%;
+}
+.add-page-container h1 {
+    position: absolute;
+    top: 0;
+}
+.add-page::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    left: 0;
+    background-color: #0000004a;
+}
+.form-label {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.add-form {
+    margin-bottom: 48px;
+}
+.add-page h1 {
+    color: white;
+    padding: 50px 0px;
+}
+.add-form input {
+    width: 100%;
+    padding: 10px ;
+    margin: 10px 0px;
+}
+.add-btn-blue {
+    padding: 11px 50px !important;
+    margin-top: 40px;
+    background-color: #198754;
+    color: white;
+    font-weight: bold !important;
+    border: none !important;
+    transition: 0.5s !important;
+}
+.add-btn-blue:hover {
+    box-shadow: 1px 1px 12px 5px white
+}
