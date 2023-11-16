@@ -1,0 +1,143 @@
+.footer {
+  padding: 50px 0 0;
+  border-top: 1px solid gainsboro;
+  background-color: #dcdcdc29;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+@media (max-width: 767px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.footer-content div h4 {
+  line-height: 1.6;
+  margin: 30px 0;
+  font-weight: 600;
+}
+.footer-content div ul {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.footer-content div ul li {
+  margin: 15px 0;
+}
+.footer-content div ul li a:hover {
+  color: #d31313a6;
+}
+.footer-content div ul li a {
+  color: gray;
+}
+.social-media-icon {
+  text-align: center;
+  margin: 50px 0;
+  letter-spacing: 5.6px;
+}
+.social-media-icon p {
+  font-size: larger;
+}
+.social-media-icon svg {
+  margin: 0 15px;
+}
+.social-media-icon svg:nth-child(2):hover,
+.social-media-icon svg:nth-child(3):hover,
+.social-media-icon svg:nth-child(4):hover,
+.social-media-icon svg:nth-child(5):hover,
+.social-media-icon svg:nth-child(6):hover {
+  cursor: pointer;
+}
+.social-media-icon svg:nth-child(2):hover {
+  color: #1877f2;
+  cursor: pointer;
+}
+.social-media-icon svg:nth-child(3):hover {
+  color: #1da1f2;
+}
+.social-media-icon svg:nth-child(4):hover {
+  color: #0077b5;
+}
+.social-media-icon svg:nth-child(5):hover {
+  color: #ff0000;
+}
+.social-media-icon svg:nth-child(6):hover {
+  color: #fcaf45;
+}
+.copy-right {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 17px 0;
+  gap: 14px;
+  border-top: 1px solid gainsboro;
+}
+.copy-right ul {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 767px) {
+  .copy-right ul {
+    gap: 7px;
+  }
+}
+/* 
+.social-icons {
+  z-index: 2;
+  letter-spacing: 15px;
+  cursor: pointer;
+}
+.facebook:hover {
+  color: #1877f2;
+}
+.twitter:hover {
+  color: #1da1f2;
+}
+.linkedin:hover {
+  color: #0077b5;
+}
+.youtube:hover {
+  color: #ff0000;
+}
+.instagram:hover {
+  color: #fcaf45;
+}
+.text-hov:hover {
+  color: red;
+} */
+
+/* .facebook,
+.twitter,
+.linkedin,
+.youtube,
+.instagram {
+  margin: 0px 10px;
+} */
+@media (min-width: 991px) {
+  .moving {
+    position: relative;
+  }
+  .moving::before {
+    content: attr(data-link);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: 0.4s;
+  }
+  .moving:hover::before {
+    transform: translateX(0);
+  }
+  .moving:hover span {
+    transform: translateX(100%);
+    transition: 0.4s;
+    display: block;
+  }
+}

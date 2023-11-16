@@ -1,0 +1,144 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: #d6c9afc7;
+  transition: 1s;
+}
+/*background change on scroll*/
+.background {
+  background-color: #d6c9af;
+}
+.Nav-bar {
+  padding: 10px 0 5px;
+  border-bottom: 1px solid black;
+}
+.navbar-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px 28px;
+  padding: 3px 0;
+  width: 100%;
+}
+
+.logo img {
+  height: 35px;
+}
+.collapse-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff6e;
+  padding: 11px 30px;
+  border-radius: 12px;
+  flex-direction: column;
+}
+@media (min-width: 991px) {
+  .collapse-content {
+    flex-direction: row;
+  }
+}
+.deliverd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+.deliverd img {
+  height: 21px;
+}
+.deliverd p {
+  margin: 0;
+}
+.deliverd p span {
+  font-weight: bold;
+}
+
+.deliverd span:hover {
+  color: #d31313a6;
+  cursor: pointer;
+}
+.search {
+  position: relative;
+  flex-grow: 1;
+}
+.search input {
+  width: 100%;
+  padding: 10px 16px;
+  border: 2px solid black;
+}
+
+.search-icon {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+}
+.signin-and-cart {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.sign,
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sign div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.sign div:first-child span:first-child {
+  background-color: #d6c9af;
+  border-radius: 50%;
+  padding: 2px 11px;
+  font-size: x-large;
+  text-transform: capitalize;
+}
+.sign div:last-child svg {
+  margin-right: 10px;
+}
+.sign div div:last-child span {
+  cursor: pointer;
+  font-size: large;
+  font-weight: 900;
+}
+.sign div div:last-child:hover {
+  color: #d31313a6;
+}
+.sign a {
+  color: black;
+  font-size: x-large;
+}
+.sign a svg {
+  margin-right: 10px;
+}
+.sign a:hover {
+  color: #d31313a6;
+}
+.sign h6 {
+  margin: 0;
+}
+.cart {
+  font-size: xx-large;
+  position: relative;
+}
+.cart a span {
+  position: absolute;
+  top: -15px;
+  right: 6px;
+}
+.cart a svg {
+  vertical-align: bottom;
+}
+/* 
+.sign:hover,
+.cart:hover a {
+  color: #d31313a6;
+  cursor: pointer;
+} */
