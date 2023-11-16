@@ -1,0 +1,10 @@
+.card img {
+  height: 300px;
+  max-width: 100%;
+}
+/* This class in Home-page   */
+.all-card {
+  gap: 30px 0;
+  cursor: pointer;
+  padding: 50px 20px;
+}

@@ -1,0 +1,55 @@
+.successpage {
+  padding: 80px 0;
+  text-align: center;
+  color: gray;
+  background-color: #dcdcdc26;
+}
+.success-content .success-content-title {
+  margin-bottom: 50px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 13px;
+}
+.success-content .success-content-title svg {
+  color: green;
+  margin-bottom: 25px;
+  font-size: xxx-large;
+}
+.success-content .success-content-title h4 {
+  color: black;
+}
+
+.order-description {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  font-size: larger;
+  background-color: white;
+  padding: 25px;
+  border-radius: 13px;
+}
+@media (max-width: 767px) {
+  .order-description {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.order-description div h5 {
+  color: black;
+}
+.order-description div:nth-child(2) span:nth-child(3) {
+  margin-left: 15px;
+}
+.success-button {
+  margin-top: 45px;
+}
+.success-button a {
+  background-color: #d6c9af;
+  padding: 10px 17px;
+  border-radius: 13px;
+  transition: 0.5s;
+  opacity: 0.5;
+  color: black;
+}
+.success-button a:hover {
+  opacity: 1;
+}

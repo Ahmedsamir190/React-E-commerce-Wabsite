@@ -1,0 +1,211 @@
+.product-action {
+  padding: 50px 0;
+  background-color: #dcdcdc52;
+}
+@media (max-width: 767px) {
+  .product-action {
+    overflow-y: scroll;
+  }
+}
+.title-page {
+  /* background-image: url(../Photo/image5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 26px;
+  padding: 35px 30px;
+  border-radius: 13px;
+  background-color: white;
+}
+@media (max-width: 767px) {
+  .title-page {
+    flex-direction: column;
+    gap: 14px;
+    padding: 15px 0px;
+  }
+}
+
+.title-page h3 {
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.title-page a {
+  padding: 10px 25px;
+  background-color: #d6c9af;
+  font-weight: 800;
+  color: black;
+  transition: 0.5s;
+  opacity: 0.5;
+}
+.title-page a:hover {
+  box-shadow: 1px 1px 5px 2px #d6c9af;
+  opacity: 1;
+  color: black;
+}
+table {
+  text-align: center;
+  background-color: white;
+  border-radius: 13px;
+  font-size: large;
+}
+tbody tr .button-deleteandinfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+@media (max-width: 767px) {
+  tbody tr td:nth-child(4) {
+    flex-direction: column;
+  }
+}
+tbody tr td:nth-child(4) button,
+tbody tr td:nth-child(4) a {
+  border: none;
+  background-color: #d6c9af;
+  color: black;
+  opacity: 0.5;
+  transition: 0.9s;
+}
+tbody tr td:nth-child(4) button {
+  padding: 10px 16px;
+}
+tbody tr td:nth-child(4) a {
+  padding: 7px 24px;
+}
+tbody tr td:nth-child(4) button:hover,
+tbody tr td:nth-child(4) a:hover {
+  opacity: 1;
+  color: white;
+}
+
+/*add products styles*/
+.add-product {
+  padding: 60px 0 100px;
+  background-color: #dcdcdc52;
+}
+@media (max-width: 767px) {
+  .add-product {
+    text-align: center;
+    padding: 60px 20px;
+  }
+}
+.addproduct-title {
+  background-color: white;
+  padding: 25px 20px;
+  border-radius: 13px;
+}
+.add-product-content .addproduct-title h1 {
+  margin: 0;
+  font-weight: 900;
+}
+.addproduct-form-label {
+  font-weight: bold;
+  font-size: larger;
+}
+.addproduct-form {
+  margin-top: 80px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 13px;
+}
+.addproduct-form div:first-child {
+  margin-bottom: 35px;
+}
+.addproduct-form div input {
+  padding: 17px;
+}
+.addproduct-form div label {
+  font-size: xx-large;
+}
+.addproduct-form button {
+  margin-top: 50px;
+  padding: 12px 70px;
+  font-size: x-large;
+  background-color: #d6c9af;
+  color: white;
+  border: none;
+  opacity: 0.5;
+  transition: 0.9s;
+}
+.addproduct-form button:hover {
+  opacity: 1;
+}
+/*info styles*/
+.product-info {
+  padding: 55px 0 100px;
+  background-color: #dcdcdc52;
+}
+.productinfo-title {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.productinfo-title a {
+  color: #d6c9af;
+  font-size: x-large;
+}
+.productinfo-title a:hover {
+  color: #d6c9af;
+}
+.card-info {
+  margin-top: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  border-radius: 14px;
+  padding: 35px;
+  background-color: white;
+  border-radius: 13px;
+}
+@media (max-width: 767px) {
+  .card-info {
+    flex-direction: column;
+  }
+}
+
+.card-info div {
+  flex-basis: calc(100% / 3);
+}
+.card-info div img {
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+}
+.card-info div:nth-child(2),
+.card-info div:nth-child(3) {
+  font-size: larger;
+}
+.card-info div:nth-child(2) p,
+.card-info div:nth-child(3) p {
+  color: #808080c9;
+  letter-spacing: 1px;
+  font-weight: 100;
+  margin-top: 27px;
+}
+.card-info div:nth-child(2) span,
+.card-info div:nth-child(3) span {
+  font-weight: 900;
+}
+.card-info div:nth-child(3) button {
+  padding: 12px 0;
+  width: 100%;
+  border: 0;
+  background-color: #d6c9af;
+  opacity: 0.5;
+  transition: 0.9s;
+}
+.card-info div:nth-child(3) button:hover {
+  opacity: 1;
+}

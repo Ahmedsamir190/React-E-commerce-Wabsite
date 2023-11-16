@@ -1,0 +1,148 @@
+.signin-page,
+.signup-page {
+  display: flex;
+  flex-wrap: wrap;
+}
+.signup-page {
+  flex-direction: row-reverse;
+}
+.signin-page .photo,
+.signup-page .photo,
+.signup-page .form,
+.signin-page .form {
+  flex-basis: 50%;
+}
+.signup-page .form,
+.signin-page .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .signin-page .photo,
+  .signin-page .form,
+  .signup-page .photo,
+  .signup-page .form {
+    flex-basis: 100%;
+  }
+}
+
+.signin-page .photo,
+.signup-page .photo {
+  position: relative;
+}
+.signin-page .photo img,
+.signup-page .photo img {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.signin-page .photo::before,
+.signup-page .photo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000059;
+}
+.signin-page .form,
+.signup-page .form {
+  padding: 50px 40px;
+}
+.signin-page .form div:first-child,
+.signup-page .form div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signin-page .form div:first-child a,
+.signup-page .form div:first-child a {
+  color: black;
+  font-size: xx-large;
+  font-weight: 900;
+}
+.signin-page .form form label,
+.signup-page .form form label {
+  font-size: x-large;
+}
+.signin-page .form form .email,
+.signin-page .form form .password,
+.signup-page .form form .name,
+.signup-page .form form .email,
+.signup-page .form form .password {
+  display: flex;
+  align-items: center;
+}
+.signin-page .form form .email input,
+.signin-page .form form .password input,
+.signup-page .form form .name input,
+.signup-page .form form .email input,
+.signup-page .form form .password input {
+  box-shadow: none;
+  border: 1px solid gainsboro;
+  width: 100%;
+}
+.signin-page .form form .email span,
+.signin-page .form form .password span,
+.signup-page .form form .name span,
+.signup-page .form form .email span,
+.signup-page .form form .password span {
+  background-color: #d6c9af;
+  padding: 1px 14px;
+  color: black;
+  border-radius: 2px;
+  font-size: x-large;
+  cursor: pointer;
+}
+.signin-page .form form .forgotpassword input,
+.signup-page .form form .forgotpassword input {
+  margin-right: 10px;
+}
+.signin-page .form form .forgotpassword label,
+.signup-page .form form .forgotpassword label {
+  margin-right: 10px;
+}
+.signin-page .form form .forgotpassword span,
+.signup-page .form form .forgotpassword span {
+  color: blue;
+  cursor: pointer;
+}
+.signin-page .form form .signin-button input,
+.signup-page .form form .signin-button input {
+  width: 100%;
+  background-color: #d6c9af;
+  padding: 15px;
+  border: none;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.signin-page .form form .signin-button input:hover,
+.signup-page .form form .signin-button input:hover {
+  opacity: 1;
+}
+.signin-page .form form .not-a-member,
+.signup-page .form form .not-a-member {
+  margin-top: 26px;
+  font-size: larger;
+}
+.signin-page .form form .not-a-member span,
+.signup-page .form form .not-a-member span {
+  margin-right: 10px;
+}
+.terms-privacy {
+  margin: 22px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+}
+.terms-privacy .form-check input {
+  margin-right: 12px;
+}
+.member {
+  margin-top: 20px;
+  font-size: x-large;
+}
