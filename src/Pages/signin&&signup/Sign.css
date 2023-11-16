@@ -75,6 +75,7 @@
 .signup-page .form form .password {
   display: flex;
   align-items: center;
+  flex-wrap: wrap ;
 }
 .signin-page .form form .email input,
 .signin-page .form form .password input,
@@ -83,7 +84,7 @@
 .signup-page .form form .password input {
   box-shadow: none;
   border: 1px solid gainsboro;
-  width: 100%;
+  width: 80%;
 }
 .signin-page .form form .email span,
 .signin-page .form form .password span,
